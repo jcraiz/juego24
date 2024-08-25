@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a img {
+  border: none;
+}
+
+body {
+  background-color: #FFF;
+  color: #111;
+  font-family: "Nunito", Helvetica, Arial, sans-serif !important;
+  font-size: 12pt;
+}
+
+#all {
+  padding: 12pt 3%;
+  overflow-x: hidden;
+}
+
+.clear {
+  clear: both;
+}
+
+#actividad {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.datosActividad {
+  font-size: 11px;
+  padding: 4pt 1.5% 0 0;
+  text-align: right;
+}
+
+.logo {
+  float: left;
+  padding: 3pt 0 0 1.5%;
+  display: none;
+}
+
+#header {
+  padding: 1pt 0 20pt;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 2px;
+  float: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #618a2c;
+}
+
+#textoAutor {
+  margin-right: 4px;
+}
+
+/* RELACIONAR GRUPOS */
+.botoneraInteractiva {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 80px;
+  padding-top: 20px;
+}
+@media only screen and (min-width: 35rem) {
+  .botoneraInteractiva {
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+    align-items: inherit;
+  }
+}
+.botoneraInteractiva .botonGenerico {
+  margin: 0;
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 35rem) {
+  .botoneraInteractiva .botonGenerico:first-child {
+    margin-right: 1rem;
+  }
+}
+
+.elogo {
+  display: flex;
+  justify-content: center;
+  padding: 0px 0 20px;
+}
+@media print {
+  .elogo {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+  }
+  .elogo svg {
+    height: auto;
+    width: 64px;
+  }
+}
+
+#header {
+  padding: 20px 0 0;
+  line-height: 1;
+}
+#header .datosActividad {
+  font-size: 11px;
+  padding: 4pt 1.5% 20px 0;
+  text-align: center;
+}
+
+#lienzo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  max-width: 1550px;
+}
+
+.pistaPrint {
+  opacity: 0.5;
+  font-style: italic;
+  font-size: 10px;
+}
+
+@media print {
+  header,
+.botoneraInteractiva {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .footer__superior,
+.footer__inferior {
+    display: none;
+  }
+}
+.mapContainer {
+  position: relative;
+}
+
+.mapPoint {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.questionsContainer {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.question {
+  display: flex;
+  align-items: end;
+  gap: 5px;
+}
+
+.questionMedia img {
+  max-height: 100px;
+  height: auto;
+}
+
+.questionText {
+  font-weight: 700;
+}
+
+.questionDescription {
+  border-left: 1px solid black;
+  padding-left: 5px;
+}
